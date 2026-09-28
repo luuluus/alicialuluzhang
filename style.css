@@ -1,0 +1,161 @@
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #F5E3E0;
+  color: #3A3238;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.4px;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 90px 20px;
+  background: linear-gradient(135deg, #E8B4BC, #D282A6);
+  box-shadow: 0 2px 12px rgba(58, 50, 56, 0.08);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: #3A3238;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  color: #3A3238;
+  margin-top: 12px;
+  font-size: 1.05rem;
+}
+
+/* NAV */
+nav {
+  margin-top: 24px;
+}
+
+nav a {
+  color: #3A3238;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #6E4555;
+}
+
+/* MAIN CONTENT */
+main {
+  max-width: 950px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+section {
+  margin-bottom: 65px;
+}
+
+h2 {
+  border-bottom: 2px solid #D282A6;
+  display: inline-block;
+  padding-bottom: 6px;
+  margin-bottom: 18px;
+}
+
+/* PROJECT CARDS */
+.card {
+  background: #FFF8F7;
+  padding: 24px;
+  border-radius: 14px;
+  margin-top: 22px;
+  border: 1px solid #E8B4BC;
+  box-shadow: 0 6px 16px rgba(58, 50, 56, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(58, 50, 56, 0.12);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #6E4555;
+}
+
+.card a {
+  color: #3A3238;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* BUTTONS */
+.play-button,
+.details-button {
+  display: inline-block;
+  margin-top: 14px;
+  margin-right: 10px;
+  padding: 10px 18px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  background: #D282A6;
+  color: #3A3238;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.play-button:hover,
+.details-button:hover {
+  background: #C46F96;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(58, 50, 56, 0.15);
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #E8B4BC;
+}
+
+/* LINKS INSIDE SECTIONS */
+#about a,
+#contact a,
+.card a:not(.play-button):not(.details-button) {
+  color: #6E4555;
+  transition: color 0.2s ease;
+}
+
+#about a:hover,
+#contact a:hover,
+.card a:not(.play-button):not(.details-button):hover {
+  color: #D282A6;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #6E4555;
+  border-top: 1px solid #E8B4BC;
+  margin-top: 30px;
+}
