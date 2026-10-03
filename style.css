@@ -1,4 +1,4 @@
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600&display=swap');
 
 * {
   box-sizing: border-box;
@@ -149,6 +149,17 @@ h2 {
 #contact a:hover,
 .card a:not(.play-button):not(.details-button):hover {
   color: #D282A6;
+}
+
+/* IMAGE PRVIEWS */
+.preview {
+  display: block;
+  width: 70%;       /* or 400px */
+  max-width: 600px; /* keeps it from getting too large */
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  margin: 0 auto 18px;
+  background: #eee;
 }
 
 /* FOOTER */
