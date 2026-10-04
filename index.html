@@ -32,17 +32,21 @@
       <div class="card">
         <h3>Galaxy Grub</h3>
         <img class="preview" src="images/galaxy-grub-preview.png" alt="Galaxy Grub gameplay screenshot">
-        <p><strong>Genre:</strong> Futuristic sci-fi mobile game</p>
+        <p><strong>Genre:</strong> Futuristic, sci-fi mobile game</p>
         <p><strong>Tools:</strong> Phaser, Procreate, pixilart.com, Piskel, Microsoft Paint </p>
         <p><strong>Team:</strong> 5-person project (with Jason Garabedian, Jenny Wong, Jose Baeza, Alexander Flores)</p>
         <p><strong>Role:</strong> Production Lead, Artist, Programmer</p>
 
         <p>
-          Galaxy Grub is a futuristic sci-fi based cooking game that takes place on a nearby moon in the far off future
-        </p>
+          Galaxy Grub is a futuristic sci-fi based cooking game that takes place on a nearby moon in the far off future. 
+          Players take on the role of a chef who must complete a specific number of orders within a time limit to progress to the next level.
+          Using movile drag and drop mechanics, players must grab ingredients quickly and combine them to create dishes to serve up. At
+          each level the difficulty increases with more complex dishes and faster timers, creating new challenges for players to overcome.
 
-        <p>
-          
+        </p>
+          Utilizing a procedural audio system, the game features a soundtrack that increases in intensity as the timer decreases, creating
+          a sense of urgency and excitement for players. With features such as customizable settings that are saved in local storage, along with
+          records of player times Galaxy Grub encourages players to improve their skills and compete for the best times.
         </p>
 
         <a class="play-button"
@@ -144,11 +148,9 @@
         <p><strong>Role:</strong> Programmer, Artist</p>
 
         <p>
-          
-        </p>
-
-        <p>
-          
+          Fruit Blast is a physics-based game inspired by Angry Birds. Players launch fruit into a basket utilizing
+          drag and release mechanics. As the levels progress, players need to overcome more challenging obstacles
+          using timing and gravity.
         </p>
 
         <a class="play-button"
@@ -165,14 +167,12 @@
         <p><strong>Genre:</strong> Interactive Fiction</p>
         <p><strong>Tools:</strong> Phaser</p>
         <p><strong>Team:</strong> Solo project</p>
-        <p><strong>Role:</strong> Programmer</p>
+        <p><strong>Role:</strong> Programmer, Artist</p>
 
         <p>
-          
-        </p>
-
-        <p>
-          
+          Using Adam Smith's Adventure Prototype, Packing focuses on the aspect of moving from one place to another. 
+          It is a short interactive game to showcase how small actions like packing up items can be part of a larger journey.
+          In addition to Smith's original portotype, Packing includes new features such as object pick-up and hover animations.
         </p>
 
         <a class="play-button"
@@ -213,7 +213,14 @@
 
     <!-- ABOUT ME -->
     <section id="about">
-      <h2>About Me</h2>
+      <h2>About Me 𐔌՞ ܸ.ˬ.ܸ՞𐦯</h2>
+
+      <div class="my-photos">
+        <img src="images/aboutme/alicia-1.jpg" alt="Photo of Alicia" class="active">
+        <img src="images/aboutme/alicia-2.jpg" alt="Photo of Alicia">
+        <img src="images/aboutme/alicia-3.jpg" alt="Photo of Alicia">
+        <img src="images/aboutme/alicia-4.jpg" alt="Photo of Alicia">
+      </div>
 
       <p>
         Hi! My name is Alicia, and I am a third-year Computer Science: Game Design student at UC Santa Cruz.
@@ -232,6 +239,19 @@
       </p>
 
     </section>
+
+      <script>
+        const photos = document.querySelectorAll('.my-photos img');
+        let current = 0;
+
+        if (photos.length > 1) {
+          setInterval(() => {
+            photos[current].classList.remove('active');
+            current = (current + 1) % photos.length;
+            photos[current].classList.add('active');
+          }, 5000);
+        }
+      </script>
 
     <!-- CONTACT -->
     <section id="contact">

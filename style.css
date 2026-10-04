@@ -162,6 +162,51 @@ h2 {
   background: #eee;
 }
 
+/* ABOUT ME PHOTOS */
+.my-photos {
+  position: relative;
+  float: right;
+  width: 220px;
+  aspect-ratio: 4 / 5;
+  margin: 0 0 16px 24px;
+  border: 5px solid #FFF8F7;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(58, 50, 56, 0.15);
+  outline: 1px solid #E8B4BC;
+  overflow: hidden;
+  background: #eee;
+  transform: rotate(2deg);
+}
+
+.my-photos img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.my-photos img.active {
+  opacity: 1;
+}
+
+/* keeps the Contact section from wrapping around the photo */
+#about::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@media (max-width: 600px) {
+  .my-photos {
+    float: none;
+    margin: 0 auto 20px;
+    width: 70%;
+  }
+}
+
 /* FOOTER */
 footer {
   text-align: center;
