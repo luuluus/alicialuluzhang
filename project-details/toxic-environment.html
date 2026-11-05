@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toxic Environment | Alicia Zhang</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="details.css" />
+</head>
+<body>
+
+  <main class="detail">
+    <a class="back" href="../index.html#projects">← back to projects</a>
+
+    <article class="window">
+      <div class="bar"><i></i><i></i><i></i><span>toxic-environment.exe</span></div>
+      <div class="body">
+
+        <!-- TOP: title, one-liner, picture slideshow, quick facts, buttons -->
+        <header class="head-classic">
+          <h1>Toxic Environment</h1>
+          <p class="lead">A toxic fish spreads pollution through clean water to survive.</p>
+
+          <!-- ✏️ HEADER PICTURES (slideshow)
+               data-slideshow="off" = one still picture (only the first <img> shows)
+               data-slideshow="on"  = pictures change automatically, plus ‹ › buttons, dots and the keyboard arrow keys
+               data-autoplay="off"  = ON but only changes when you click (no automatic change)
+               data-interval="5000" = how long each picture stays, in milliseconds
+               To use it: save your extra pictures in assets/images/toxicenvironment/toxic-environment/ as slide-2.png and slide-3.png,
+               then change data-slideshow to "on". Copy or delete <img> lines to have more or fewer pictures. -->
+          <div class="slideshow" data-slideshow="off" data-autoplay="on" data-interval="5000" role="group" aria-roledescription="slideshow" aria-label="Toxic Environment pictures">
+            <div class="ss-stage">
+              <img class="hero-img active" src="../assets/images/toxicenvironment/toxic-environment-preview.png" alt="Toxic Environment screenshot 1">
+              <img class="hero-img" src="../assets/images/toxicenvironment/toxic-environment/slide-2.png" alt="Toxic Environment screenshot 2" loading="lazy">
+              <img class="hero-img" src="../assets/images/toxicenvironment/toxic-environment/slide-3.png" alt="Toxic Environment screenshot 3" loading="lazy">
+            </div>
+          </div>
+
+          <dl class="specs">
+            <div><dt>Genre</dt><dd>2D Survival Platformer</dd></div>
+            <div><dt>Tools</dt><dd>GDevelop</dd></div>
+            <div><dt>Team</dt><dd>2-person project (with Alexander Flores)</dd></div>
+            <div><dt>Role</dt><dd>Gameplay Programmer, Designer, Playtester</dd></div>
+          </dl>
+          <div class="actions head-actions"><a class="btn" href="https://gd.games/games/bcb3c9c5-b772-4b67-8328-55a415b1ded6" target="_blank" rel="noopener">Play Game</a></div>
+        </header>
+
+        <!-- OVERVIEW -->
+        <section class="block">
+          <h2 class="title">overview</h2>
+          <div class="overview-box"><p>Toxic Environment explores the collapse of an ecosystem driven by one creature's need for survival. Players control a toxic fish that spreads pollution through clean bodies of water to stay alive, gradually transforming the environment while balancing survival needs.</p></div>
+        </section>
+
+        <!-- ✏️ VIDEO: save your file as videos/toxic-environment-demo.mp4 (see the notes in my message).
+             Delete this whole section if you don't have a video yet. -->
+        <section class="block">
+          <h2 class="title">gameplay video</h2>
+          <div class="video">
+            <video controls preload="metadata" poster="../assets/images/toxicenvironment/toxic-environment-preview.png">
+              <source src="../videos/toxic-environment-demo.mp4" type="video/mp4">
+              Your browser can't play this video.
+            </video>
+          </div>
+
+          <!-- OR use YouTube instead: delete the .video box above, then remove the comment marks around this one
+               and replace VIDEO_ID with the part after "v=" in your YouTube link.
+          <div class="video">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Toxic Environment gameplay" loading="lazy" allowfullscreen></iframe>
+          </div>
+          -->
+        </section>
+
+        <!-- ✏️ SCREENSHOTS: put assets/images/toxicenvironment in assets/images/toxicenvironment/toxic-environment/ . Copy a <figure> to add more, delete one to remove it. -->
+        <section class="block">
+          <h2 class="title">screenshots</h2>
+          <div class="gallery">
+            <figure class="shot"><img src="../assets/images/toxicenvironment/toxic-environment/shot-1.png" alt="Toxic Environment screenshot 1"><figcaption>caption for photo 1</figcaption></figure>
+            <figure class="shot"><img src="../assets/images/toxicenvironment/toxic-environment/shot-2.png" alt="Toxic Environment screenshot 2"><figcaption>caption for photo 2</figcaption></figure>
+            <figure class="shot"><img src="../assets/images/toxicenvironment/toxic-environment/shot-3.png" alt="Toxic Environment screenshot 3"><figcaption>caption for photo 3</figcaption></figure>
+          </div>
+        </section>
+
+        <!-- ✏️ DESIGN PROCESS: each .step is text + a picture. Copy a whole .step to add another.
+             Add class "flip" to put the picture on the left, or use class "step solo" and delete the <figure> for text only. -->
+        <section class="block">
+          <h2 class="title">design process</h2>
+
+          <div class="step">
+            <div class="step-text">
+              <h3>1. Early ideas</h3>
+              <p class="todo">✏️ How did the idea start? What was the goal, and what inspired it? Add your sketches or notes in the picture.</p>
+            </div>
+            <figure class="shot"><img src="../assets/images/toxicenvironment/toxic-environment/process-1.png" alt="Early sketches for Toxic Environment"><figcaption>sketches &amp; notes</figcaption></figure>
+          </div>
+
+          <div class="step flip">
+            <div class="step-text">
+              <h3>2. Prototype</h3>
+              <p class="todo">✏️ What did your first playable version look like? What did you test first?</p>
+            </div>
+            <figure class="shot"><img src="../assets/images/toxicenvironment/toxic-environment/process-2.png" alt="Toxic Environment prototype"><figcaption>first prototype</figcaption></figure>
+          </div>
+
+          <div class="step">
+            <div class="step-text">
+              <h3>3. Playtesting &amp; changes</h3>
+              <p class="todo">✏️ What feedback did you get, and what did you change because of it?</p>
+            </div>
+            <figure class="shot"><img src="../assets/images/toxicenvironment/toxic-environment/process-3.png" alt="Toxic Environment playtesting"><figcaption>playtest changes</figcaption></figure>
+          </div>
+        </section>
+
+        <!-- MY CONTRIBUTIONS -->
+        <section class="block">
+        <h2 class="title">what i did</h2>
+            <div class="overview-box">
+                <ul class="contrib">
+                <li>Fill in</li>
+                <li>Fill in.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- WHAT I LEARNED -->
+        <section class="block">
+          <h2 class="title">what i learned</h2>
+          <p class="todo">✏️ Challenges you ran into, what you are proud of, and what you would do differently next time.</p>
+        </section>
+
+      </div>
+    </article>
+
+    <!-- previous / next game -->
+    <div class="pn">
+      <a class="ghost" href="galaxy-grub.html">← Galaxy Grub</a>
+      <a class="ghost" href="kings-underworks.html">King’s Underworks →</a>
+    </div>
+  </main>
+
+  <!-- TASKBAR (same as the main page) -->
+  <nav class="dock" aria-label="Main">
+    <a href="../index.html#home">home</a>
+    <a href="../index.html#projects">projects</a>
+    <a href="../index.html#about">about</a>
+    <a href="../index.html#contact">contact</a>
+    <a href="../docs/alicia-zhang-resume.pdf" target="_blank" rel="noopener">resume ↗</a>
+  </nav>
+
+  <script src="details.js"></script>
+</body>
+</html>

@@ -4,272 +4,218 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alicia Zhang | Game Portfolio</title>
+  <meta name="description" content="Game design portfolio of Alicia Zhang, Computer Science: Game Design student at UC Santa Cruz." />
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-  <!-- HERO / INTRO -->
-  <header class="hero">
-    <h1>Alicia Zhang</h1>
-    <p>Computer Science: Game Design Student @ UC Santa Cruz</p>
+  <!-- HOME SCREEN: a cozy desktop -->
+  <header class="room" id="home">
 
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-      <a href="docs/alicia-zhang-resume.pdf" target="_blank">Resume</a>
-    </nav>
+    <div class="window hello">
+      <div class="bar"><i></i><i></i><i></i><span>home.</span></div>
+      <div class="body">
+        <h1>hi, i’m alicia ❀</h1>
+        <p class="sub">Computer Science: Game Design student</p>
+        <p class="sub small">@ University of California, Santa Cruz</p>
+        <p class="hint" id="hint" role="status"></p>
+      </div>
+    </div>
+
+    <!-- IMAGE SLOT 1: your mascot. Save a PNG as assets/images//mascot.png and it replaces this drawing automatically. -->
+    <div class="mascot" aria-hidden="true">
+      <img src="assets/decor/mascot.png" alt="" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+    </div>
   </header>
 
   <main>
 
     <!-- PROJECTS -->
     <section id="projects">
-      <h2>Projects</h2>
-
-      <!-- PROJECT 1 -->
-      <div class="card">
-        <h3>Galaxy Grub</h3>
-        <img class="preview" src="images/galaxy-grub-preview.png" alt="Galaxy Grub gameplay screenshot">
-        <p><strong>Genre:</strong> Futuristic, sci-fi mobile game</p>
-        <p><strong>Tools:</strong> Phaser, Procreate, pixilart.com, Piskel, Microsoft Paint </p>
-        <p><strong>Team:</strong> 5-person project (with Jason Garabedian, Jenny Wong, Jose Baeza, Alexander Flores)</p>
-        <p><strong>Role:</strong> Production Lead, Artist, Programmer</p>
-
-        <p>
-          Galaxy Grub is a futuristic sci-fi based cooking game that takes place on a nearby moon in the far off future. 
-          Players take on the role of a chef who must complete a specific number of orders within a time limit to progress to the next level.
-          Using movile drag and drop mechanics, players must grab ingredients quickly and combine them to create dishes to serve up. At
-          each level the difficulty increases with more complex dishes and faster timers, creating new challenges for players to overcome.
-
-        </p>
-          Utilizing a procedural audio system, the game features a soundtrack that increases in intensity as the timer decreases, creating
-          a sense of urgency and excitement for players. With features such as customizable settings that are saved in local storage, along with
-          records of player times Galaxy Grub encourages players to improve their skills and compete for the best times.
-        </p>
-
-        <a class="play-button"
-          href="https://alluzhan.github.io/GalaxyGrub/"
-          target="_blank">
-          Play Game
-        </a>
-
-        <!--
-        <a class="details-button"
-          href="">
-          View Details
-        </a>
-        -->
-      </div>
-
-
-      <!-- PROJECT 2 -->
-      <div class="card">
-        <h3>Toxic Environment</h3>
-        <img class="preview" src="images/toxic-environment-preview.png" alt="Toxic Environment gameplay screenshot">
-        <p><strong>Genre:</strong> 2D Survival Platformer</p>
-        <p><strong>Tools:</strong> GDevelop</p>
-        <p><strong>Team:</strong> 2-person project (with Alexander Flores)</p>
-        <p><strong>Role:</strong> Gameplay Programmer, Designer, Playtester</p>
-
-        <p>
-          Toxic Environment explores the collapse of an ecosystem driven by one creature's
-          need for survival. Players control a toxic fish that spreads pollution through
-          clean bodies of water to stay alive, gradually transforming the environment while
-          balancing survival needs.
-        </p>
-
-        <p>
-          Developed key systems including marine animal behaviors, game visuals,
-          UI screens (title, end, and credits), a coin and shop system, and a
-          player speed-increase mechanic.
-        </p>
-
-        <a class="play-button"
-          href="https://gd.games/games/bcb3c9c5-b772-4b67-8328-55a415b1ded6"
-          target="_blank">
-          Play Game
-        </a>
-
-        <!--
-        <a class="details-button"
-          href="toxic-environment.html">
-          View Details
-        </a>
-        -->
-      </div>
-
-      <!-- PROJECT 3 -->
-      <div class="card">
-        <h3>King’s Underworks</h3>
-        <p><strong>Genre:</strong> Strategy Board Game</p>
-        <p><strong>Tools:</strong> Procreate</p>
-        <p><strong>Team:</strong> 2-person project (with Jay Chung)</p>
-        <p><strong>Role:</strong> Game Designer, Artist, Playtester</p>
-
-        <p>
-          King’s Underworks is a prison-themed board game where players compete to earn
-          reputation points to reduce their sentence. A 52-card deck is used to move
-          players across a 12×12 board and increase progression. Landing on different
-          tiles can increase or decrease a player's reputation, while shortcut paths
-          introduce high-risk, high-reward decisions. Players race across the board
-          for a chance at freedom.
-        </p>
-
-        <p>
-          Developed key systems for King’s Underworks, including tile mechanics,
-          positive and negative tile effects, and board layout design. Created
-          visual assets by designing half of the tiles on the board. Contributed
-          to the 52-card movement system and collaborated on gameplay balancing
-          through multiple rounds of playtesting.
-        </p>
-
-        <a class="play-button"
-          href="images/kings-underworks-board.png"
-          target="_blank">
-          View Game Board
-        </a>
-
-        <a class="details-button"
-          href="https://drive.google.com/file/d/1NXthc0hpG5Z7kjJdy5N46q2GglEjBogmT6i51SVpXIU/preview"
-          target="_blank">
-          View Rules (PDF)
-        </a>
-      </div>
-
-      <!-- PROJECT 4 -->
-      <div class="card">
-        <h3>Fruit Blast</h3>
-        <img class="preview" src="images/fruit-blast-preview.png" alt="Fruit Blast gameplay screenshot">
-        <p><strong>Genre:</strong> Physics-Based Interactive</p>
-        <p><strong>Tools:</strong> Phaser</p>
-        <p><strong>Team:</strong> Solo project</p>
-        <p><strong>Role:</strong> Programmer, Artist</p>
-
-        <p>
-          Fruit Blast is a physics-based game inspired by Angry Birds. Players launch fruit into a basket utilizing
-          drag and release mechanics. As the levels progress, players need to overcome more challenging obstacles
-          using timing and gravity.
-        </p>
-
-        <a class="play-button"
-          href="https://alluzhan.github.io/CMPM120---D3-Physics/"
-          target="_blank">
-          Play Game
-        </a>
-      </div>
-
-      <!-- PROJECT 5 -->
-      <div class="card">
-        <h3>Packing</h3>
-        <img class="preview" src="images/packing-preview.png" alt="Packing gameplay screenshot">
-        <p><strong>Genre:</strong> Interactive Fiction</p>
-        <p><strong>Tools:</strong> Phaser</p>
-        <p><strong>Team:</strong> Solo project</p>
-        <p><strong>Role:</strong> Programmer, Artist</p>
-
-        <p>
-          Using Adam Smith's Adventure Prototype, Packing focuses on the aspect of moving from one place to another. 
-          It is a short interactive game to showcase how small actions like packing up items can be part of a larger journey.
-          In addition to Smith's original portotype, Packing includes new features such as object pick-up and hover animations.
-        </p>
-
-        <a class="play-button"
-          href="https://alluzhan.github.io/CMPM120---D2-Adventure/"
-          target="_blank">
-          Play Game
-        </a>
-      </div>
-
-      <!-- PROJECT 6 -->
-      <div class="card">
-        <h3>The Meal</h3>
-        <img class="preview" src="images/the-meal-preview.png" alt="The Meal gameplay screenshot">
-        <p><strong>Genre:</strong> Interactive Fiction</p>
-        <p><strong>Tools:</strong> Twine</p>
-        <p><strong>Team:</strong> Solo project</p>
-        <p><strong>Role:</strong> Writer, Designer, Programmer</p>
-
-        <p>
-          The Meal is an interactive fiction game that focuses on a branching narrative
-          and player choice. Players decide what meal to prepare for a visiting friend,
-          with choices influencing the story’s outcome and the friend’s reaction.
-        </p>
-
-        <p>
-          Designed and implemented the narrative structure, branching logic, and player
-          choices using Twine.
-        </p>
-
-        <a class="play-button"
-          href="games/the-meal.html"
-          target="_blank">
-          Play Game
-        </a>
-      </div>
-
+      <h2 class="title">my projects <span>✩</span></h2>
+      <!-- IMAGE SLOTS 2-7: project screenshots are the assets/images//*-preview.png files listed in each slide below -->
+      <p class="pick-note">pick a game to see its details ✦</p>
+      <div class="picker" id="picker" role="group" aria-label="Choose a project"></div>
+      <div class="details" id="details" aria-live="polite">
+      
+      <article class="window project slide featured">
+        <div class="bar"><i></i><i></i><i></i><span>galaxy-grub.exe</span></div>
+        <div class="body">
+          <figure class="polaroid"><img class="" src="assets/images/galaxygrub/galaxy-grub-preview.png" alt="Galaxy Grub screenshot"><figcaption>Galaxy Grub ♡</figcaption></figure>
+          <div class="info">
+            <p class="badge">★ featured</p><h3>Galaxy Grub</h3>
+            <dl class="facts">
+              <div><dt>genre</dt><dd>Futuristic, sci-fi mobile game</dd></div>
+              <div><dt>tools</dt><dd>Phaser, Procreate, pixilart.com, Piskel, Microsoft Paint</dd></div>
+              <div><dt>team</dt><dd>5-person project (with Jason Garabedian, Jenny Wong, Jose Baeza, Alexander Flores)</dd></div>
+              <div><dt>role</dt><dd>Production Lead, Artist, Programmer</dd></div>
+            </dl>
+            <h4>About the game</h4><p>Galaxy Grub is a futuristic sci-fi based cooking game that takes place on a nearby moon in the far off future. Players take on the role of a chef who must complete a specific number of orders within a time limit to progress to the next level. Using mobile drag and drop mechanics, players must grab ingredients quickly and combine them to create dishes to serve up. At each level the difficulty increases with more complex dishes and faster timers, creating new challenges for players to overcome.</p><h4>Features</h4><p>Utilizing a procedural audio system, the game features a soundtrack that increases in intensity as the timer decreases, creating a sense of urgency and excitement for players. With features such as customizable settings that are saved in local storage, along with records of player times, Galaxy Grub encourages players to improve their skills and compete for the best times.</p>
+            <div class="actions"><a class="btn" href="https://alluzhan.github.io/GalaxyGrub-Phaser4/" target="_blank" rel="noopener">Play Game</a><a class="ghost" href="project-details/galaxy-grub.html">View details ✦</a></div>
+          </div>
+        </div>
+      </article>
+      <article class="window project slide">
+        <div class="bar"><i></i><i></i><i></i><span>toxic-environment.exe</span></div>
+        <div class="body">
+          <figure class="polaroid"><img class="" src="assets/images/toxicenvironment/toxic-environment-preview.png" alt="Toxic Environment screenshot"><figcaption>Toxic Environment ♡</figcaption></figure>
+          <div class="info">
+            <h3>Toxic Environment</h3>
+            <dl class="facts">
+              <div><dt>genre</dt><dd>2D Survival Platformer</dd></div>
+              <div><dt>tools</dt><dd>GDevelop</dd></div>
+              <div><dt>team</dt><dd>2-person project (with Alexander Flores)</dd></div>
+              <div><dt>role</dt><dd>Gameplay Programmer, Designer, Playtester</dd></div>
+            </dl>
+            <h4>About the game</h4><p>Toxic Environment explores the collapse of an ecosystem driven by one creature's need for survival. Players control a toxic fish that spreads pollution through clean bodies of water to stay alive, gradually transforming the environment while balancing survival needs.</p><h4>What I did</h4><p>Developed key systems including marine animal behaviors, game visuals, UI screens (title, end, and credits), a coin and shop system, and a player speed-increase mechanic.</p>
+            <div class="actions"><a class="btn" href="https://gd.games/games/bcb3c9c5-b772-4b67-8328-55a415b1ded6" target="_blank" rel="noopener">Play Game</a><a class="ghost" href="project-details/toxic-environment.html">View details ✦</a></div>
+          </div>
+        </div>
+      </article>
+      <article class="window project slide">
+        <div class="bar"><i></i><i></i><i></i><span>kings-underworks.exe</span></div>
+        <div class="body">
+          <figure class="polaroid"><img class="board" src="assets/images/kingsunderworks/kings-underworks-board.png" alt="King’s Underworks screenshot"><figcaption>King’s Underworks ♡</figcaption></figure>
+          <div class="info">
+            <h3>King’s Underworks</h3>
+            <dl class="facts">
+              <div><dt>genre</dt><dd>Strategy Board Game</dd></div>
+              <div><dt>tools</dt><dd>Procreate</dd></div>
+              <div><dt>team</dt><dd>2-person project (with Jay Chung)</dd></div>
+              <div><dt>role</dt><dd>Game Designer, Artist, Playtester</dd></div>
+            </dl>
+            <h4>About the game</h4><p>King’s Underworks is a prison-themed board game where players compete to earn reputation points to reduce their sentence. A 52-card deck is used to move players across a 12×12 board and increase progression. Landing on different tiles can increase or decrease a player's reputation, while shortcut paths introduce high-risk, high-reward decisions. Players race across the board for a chance at freedom.</p><h4>What I did</h4><p>Developed key systems for King’s Underworks, including tile mechanics, positive and negative tile effects, and board layout design. Created visual assets by designing half of the tiles on the board. Contributed to the 52-card movement system and collaborated on gameplay balancing through multiple rounds of playtesting.</p>
+            <div class="actions"><a class="btn" href="assets/images/kingsunderworks/kings-underworks-board.png" target="_blank" rel="noopener">View Game Board</a><a class="ghost" href="https://drive.google.com/file/d/1NXthc0hpG5Z7kjJdy5N46q2GglEjBogmT6i51SVpXIU/preview" target="_blank" rel="noopener">View Rules (PDF)</a><a class="ghost" href="project-details/kings-underworks.html">View details ✦</a></div>
+          </div>
+        </div>
+      </article>
+      <article class="window project slide">
+        <div class="bar"><i></i><i></i><i></i><span>fruit-blast.exe</span></div>
+        <div class="body">
+          <figure class="polaroid"><img class="" src="assets/images/fruitblast/fruit-blast-preview.png" alt="Fruit Blast screenshot"><figcaption>Fruit Blast ♡</figcaption></figure>
+          <div class="info">
+            <h3>Fruit Blast</h3>
+            <dl class="facts">
+              <div><dt>genre</dt><dd>Physics-Based Interactive</dd></div>
+              <div><dt>tools</dt><dd>Phaser</dd></div>
+              <div><dt>team</dt><dd>Solo project</dd></div>
+              <div><dt>role</dt><dd>Programmer, Artist</dd></div>
+            </dl>
+            <h4>About the game</h4><p>Fruit Blast is a physics-based game inspired by Angry Birds. Players launch fruit into a basket utilizing drag and release mechanics. As the levels progress, players need to overcome more challenging obstacles using timing and gravity.</p>
+            <div class="actions"><a class="btn" href="https://alluzhan.github.io/FruitBlast-Phaser4/" target="_blank" rel="noopener">Play Game</a><a class="ghost" href="project-details/fruit-blast.html">View details ✦</a></div>
+          </div>
+        </div>
+      </article>
+      <article class="window project slide">
+        <div class="bar"><i></i><i></i><i></i><span>packing.exe</span></div>
+        <div class="body">
+          <figure class="polaroid"><img class="" src="assets/images/packing/packing-preview.png" alt="Packing screenshot"><figcaption>Packing ♡</figcaption></figure>
+          <div class="info">
+            <h3>Packing</h3>
+            <dl class="facts">
+              <div><dt>genre</dt><dd>Interactive Fiction</dd></div>
+              <div><dt>tools</dt><dd>Phaser</dd></div>
+              <div><dt>team</dt><dd>Solo project</dd></div>
+              <div><dt>role</dt><dd>Programmer, Artist</dd></div>
+            </dl>
+            <h4>About the game</h4><p>Using Adam Smith's Adventure Prototype, Packing focuses on the aspect of moving from one place to another. It is a short interactive game to showcase how small actions like packing up items can be part of a larger journey. In addition to Smith's original prototype, Packing includes new features such as object pick-up and hover animations.</p>
+            <div class="actions"><a class="btn" href="https://alluzhan.github.io/Packing/" target="_blank" rel="noopener">Play Game</a><a class="ghost" href="project-details/packing.html">View details ✦</a></div>
+          </div>
+        </div>
+      </article>
+      <article class="window project slide">
+        <div class="bar"><i></i><i></i><i></i><span>the-meal.exe</span></div>
+        <div class="body">
+          <figure class="polaroid"><img class="" src="assets/images/themeal/the-meal-preview.png" alt="The Meal screenshot"><figcaption>The Meal ♡</figcaption></figure>
+          <div class="info">
+            <h3>The Meal</h3>
+            <dl class="facts">
+              <div><dt>genre</dt><dd>Interactive Fiction</dd></div>
+              <div><dt>tools</dt><dd>Twine</dd></div>
+              <div><dt>team</dt><dd>Solo project</dd></div>
+              <div><dt>role</dt><dd>Writer, Designer, Programmer</dd></div>
+            </dl>
+            <h4>About the game</h4><p>The Meal is an interactive fiction game that focuses on a branching narrative and player choice. Players decide what meal to prepare for a visiting friend, with choices influencing the story’s outcome and the friend’s reaction.</p><h4>What I did</h4><p>Designed and implemented the narrative structure, branching logic, and player choices using Twine.</p>
+            <div class="actions"><a class="btn" href="games/the-meal.html" target="_blank" rel="noopener">Play Game</a><a class="ghost" href="project-details/the-meal.html">View details ✦</a></div>
+          </div>
+        </div>
+      </article>
+        </div>
+        
     </section>
 
-    <!-- ABOUT ME -->
+    <!-- ABOUT -->
+    <!-- IMAGE SLOT 8: your About photos are assets/images//aboutme/alicia-1.jpg to alicia-4.jpg (add more <img> lines to show more) -->
     <section id="about">
-      <h2>About Me 𐔌՞ ܸ.ˬ.ܸ՞𐦯</h2>
-
-      <div class="my-photos">
-        <img src="images/aboutme/alicia-1.jpg" alt="Photo of Alicia" class="active">
-        <img src="images/aboutme/alicia-2.jpg" alt="Photo of Alicia">
-        <img src="images/aboutme/alicia-3.jpg" alt="Photo of Alicia">
-        <img src="images/aboutme/alicia-4.jpg" alt="Photo of Alicia">
+      <h2 class="title">about me <span>✩</span></h2>
+      <div class="window about">
+        <div class="bar"><i></i><i></i><i></i><span>about me.</span></div>
+        <div class="body">
+          <figure class="polaroid small-pol" aria-label="Photos of Alicia">
+            <div class="photos">
+              <img src="assets/aboutme/alicia-1.jpg" alt="Photo of Alicia" class="active">
+              <img src="assets/aboutme/alicia-2.jpg" alt="Photo of Alicia">
+              <img src="assets/aboutme/alicia-3.jpg" alt="Photo of Alicia">
+              <img src="assets/aboutme/alicia-4.jpg" alt="Photo of Alicia">
+            </div>
+            <figcaption>alicia ♡</figcaption>
+          </figure>
+          <div class="info">
+            <p>Hi! My name is Alicia, and I am a third-year Computer Science: Game Design student at UC Santa Cruz. I am interested in designing games with complex systems that allow for unique player interactions.</p>
+            <p>I've been playing video games since I was young, and some of my favorite games are Overwatch, Minecraft, Raft, and Genshin Impact. Through my gaming experiences, I'm drawn to how player choice, progression systems, and cosmetics can shape a player's experience and how it influences them to continue playing games.</p>
+            <p>I have been working on projects through my courses at UCSC, where I've explored gameplay programming using engines like Phaser, GDevelop, system designs with Machinations, and interactive storytelling through Twine. I'm comfortable switching between programming, art, design, and playtesting, and I use Git and GitHub to version my work, collaborate with teammates, and publish my games.</p>
+          </div>
+        </div>
       </div>
-
-      <p>
-        Hi! My name is Alicia, and I am a third-year Computer Science: Game Design student at UC Santa Cruz.
-        I am interested in designing games with complex systems that allow for unique player interactions.
-      </p>
-
-      <p>
-        I've been playing video games since I was young, with some of my favorite games being Overwatch, Minecraft,
-        Raft, and Genshin Impact. Through my gaming experiences, I'm drawn to how player choice, progression systems,
-        and cosmetics can shape a player's experience and how it influences them to continue playing games.
-      </p>
-
-      <p>
-        I have been working on projects through my courses at UCSC, where I've explored gameplay programming using
-        engines like Phaser, GDevelop, system designs with Machinations, and interactive storytelling through Twine.
-        I'm comfortable switching between programming, art, design, and playtesting, and I use Git and GitHub to version
-        my work, collaborate with teammates, and publish my games.
-      </p>
-
     </section>
-
-      <script>
-        const photos = document.querySelectorAll('.my-photos img');
-        let current = 0;
-
-        if (photos.length > 1) {
-          setInterval(() => {
-            photos[current].classList.remove('active');
-            current = (current + 1) % photos.length;
-            photos[current].classList.add('active');
-          }, 5000);
-        }
-      </script>
 
     <!-- CONTACT -->
     <section id="contact">
-      <h2>Contact</h2>
+      <h2 class="title">contact me <span>✩</span></h2>
+      <div class="contact-grid">
 
-      <p>Email: alicia.lulu.zhang@gmail.com</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/alicialuluzhang" target="_blank">linkedin.com/in/alicialuluzhang</a></p>
-      <p>GitHub: <a href="https://github.com/alluzhan" target="_blank">github.com/alluzhan</a></p>
+        <form class="window" id="contact-form" action="https://formspree.io/f/xaeelzen" method="POST">
+          <div class="bar"><i></i><i></i><i></i><span>get in touch!</span></div>
+          <div class="body col">
+            <label for="name">your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+            <label for="email">your email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+            <label for="message">message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+            <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <div class="actions"><button class="btn" type="submit">Send message</button></div>
+            <p class="form-status" id="form-status" role="status"></p>
+          </div>
+        </form>
 
+        <div class="window">
+          <div class="bar"><i></i><i></i><i></i><span>find me.</span></div>
+          <div class="body col">
+            <ul class="find-me">
+              <li><span>email</span><a href="mailto:alicia.lulu.zhang@gmail.com">alicia.lulu.zhang@gmail.com</a></li>
+              <li><span>linkedin</span><a href="https://www.linkedin.com/in/alicialuluzhang" target="_blank" rel="noopener">linkedin.com/in/alicialuluzhang</a></li>
+              <li><span>github</span><a href="https://github.com/alluzhan" target="_blank" rel="noopener">github.com/alluzhan</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
     </section>
 
   </main>
 
-  <footer>
-    <p>© 2026 Alicia Zhang | Game Design Portfolio</p>
-  </footer>
+  <footer><p>© 2026 Alicia Zhang | Game Design Portfolio ☆</p></footer>
 
+  <!-- TASKBAR -->
+  <nav class="dock" aria-label="Main">
+    <a href="#home">home</a>
+    <a href="#projects">projects</a>
+    <a href="#about">about</a>
+    <a href="#contact">contact</a>
+    <a href="docs/alicia-zhang-resume.pdf" target="_blank" rel="noopener">resume ↗</a>
+  </nav>
+
+  <script src="script.js"></script>
 </body>
 </html>

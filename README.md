@@ -1,2 +1,1 @@
-# alicialuluzhang.github.io
-Alicia Zhang's game development portfolio
+## Alicia Zhang's game development portfolio
