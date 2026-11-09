@@ -28,15 +28,19 @@
               data-interval="5000" = how long each picture stays, in milliseconds
               To use it: save your extra pictures in assets/images/toxicenvironment/toxic-environment/ as slide-2.png and slide-3.png,
               then change data-slideshow to "on". Copy or delete <img> lines to have more or fewer pictures. -->
-          <div class="slideshow" data-slideshow="off" data-autoplay="on" data-interval="5000" role="group" aria-roledescription="slideshow" aria-label="Toxic Environment pictures">
+          <div class="slideshow" data-slideshow="on" data-autoplay="on" data-interval="5000" role="group" aria-roledescription="slideshow" aria-label="Toxic Environment pictures">
             <div class="ss-stage">
               <img class="hero-img active" src="../assets/images/toxicenvironment/toxic-environment-preview.png" alt="Toxic Environment screenshot 1">
-              <img class="hero-img" src="../assets/images/toxicenvironment/toxic-environment/slide-2.png" alt="Toxic Environment screenshot 2" loading="lazy">
+              <img class="hero-img" src="../assets/images/toxicenvironment/slide1.png" alt="Toxic Environment screenshot 2" loading="lazy">
+              <img class="hero-img" src="../assets/images/toxicenvironment/slide2.png" alt="Toxic Environment screenshot 2" loading="lazy">
+              <img class="hero-img" src="../assets/images/toxicenvironment/slide3.png" alt="Toxic Environment screenshot 2" loading="lazy">
+              <img class="hero-img" src="../assets/images/toxicenvironment/slide4.png" alt="Toxic Environment screenshot 2" loading="lazy">
+              <img class="hero-img" src="../assets/images/toxicenvironment/slide5.png" alt="Toxic Environment screenshot 2" loading="lazy">
             </div>
           </div>
 
           <dl class="specs">
-            <div><dt>Genre</dt><dd>2D Survival Platformer</dd></div>
+            <div><dt>Genre</dt><dd>2D Top-Down Survival</dd></div>
             <div><dt>Tools</dt><dd>GDevelop</dd></div>
             <div><dt>Team</dt><dd>2-person project (with Alexander Flores)</dd></div>
             <div><dt>Role</dt><dd>Gameplay Programmer, Designer, Playtester</dd></div>
@@ -47,26 +51,31 @@
         <!-- OVERVIEW -->
         <section class="block">
           <h2 class="title">overview</h2>
-          <div class="overview-box"><p>Toxic Environment explores the collapse of an ecosystem driven by one creature's need for survival. Players control a toxic fish that spreads pollution through clean bodies of water to stay alive, gradually transforming the environment while balancing survival needs.</p></div>
+          <div class="overview-box">
+            <p>
+              Toxic Environment is a 2D survival game about the collapse of an ecosystem caused by one creature's need to survive.
+              Players control a toxic fish that must spread pollution throughout healthy ocean environments to maintain its own survival.
+              By releasing toxins, players infect vegetation and marine animals, gradually transforming vibrant underwater environments
+              into dark, lifeless spaces.
+            </p>
+              The game challenges traditional survival mechanics by making environmental destruction the player's primary objective.
+              Players must explore healthy zones, manage their toxicity and health levels, eliminate other marine life to collect coins,
+              and return to toxic safe zones to recover and purchase upgrades. As players progress, they must balance their own survival
+              with the increasingly destructive consequences of their actions.
+            </p>
+        </div>
         </section>
 
-        <!-- ✏️ VIDEO: save your file as videos/toxic-environment-demo.mp4 (see the notes in my message).
-             Delete this whole section if you don't have a video yet. -->
+        <!-- ✏️ VIDEO: save your file as assets/videos/te-gameplay.mp4.
+            Delete this whole section if you don't have a video yet. -->
         <section class="block">
           <h2 class="title">gameplay video</h2>
           <div class="video">
             <video controls preload="metadata" poster="../assets/images/toxicenvironment/toxic-environment-preview.png">
-              <source src="../assets/videos/toxic-environment-demo.mp4" type="video/mp4">
+              <source src="../assets/videos/te-gameplay.mp4" type="video/mp4">
               Your browser can't play this video.
             </video>
           </div>
-
-          <!-- OR use YouTube instead: delete the .video box above, then remove the comment marks around this one
-               and replace VIDEO_ID with the part after "v=" in your YouTube link.
-          <div class="video">
-            <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Toxic Environment gameplay" loading="lazy" allowfullscreen></iframe>
-          </div>
-          -->
         </section>
 
         <!-- ✏️ SCREENSHOTS: put assets/images/toxicenvironment in assets/images/toxicenvironment/toxic-environment/ . Copy a <figure> to add more, delete one to remove it.
@@ -80,53 +89,120 @@
         </section>
         -->
         <!-- ✏️ DESIGN PROCESS: each .step is text + a picture. Copy a whole .step to add another.
-             Add class "flip" to put the picture on the left, or use class "step solo" and delete the <figure> for text only. -->
+            Add class "flip" to put the picture on the left, or use class "step solo" and delete the <figure> for text only. -->
         <section class="block">
           <h2 class="title">design process</h2>
 
           <div class="step">
             <div class="step-text">
-              <h3>1. Prototype/Initial Ideas</h3>
-              <p class="todo"> </p>
+              <div class="todo">
+                <h3>1. Prototype/Initial Ideas</h3>
+                <p>
+                  To fit the theme 'release', we developed the idea of a survival game centered around a toxic
+                  fish living in an environment that was too healthy for it to survive comfortably. We wanted
+                  to reverse the traditional expectations of environmental games, where players are usually
+                  encouraged to protect nature. Instead, our player would need to pollute the environment to survive.
+                </p>
+                <p>
+                  During the planning stage, we first created a story board to map out the different events in our game
+                  and the expected gameplay. With the storyboard we established the main gameplay loop: spread toxins, infect marine life,
+                  collect resources, return to the toxic safe zone, and purchase upgrades.
+                  We also planned the health and toxicity systems, which would encourage players to
+                  move between healthy and polluted areas.
+                </p>
+              </div>
             </div>
-            <figure class="shot"><img src="../assets/images/toxicenvironment/toxic-environment/process-1.png" alt="Early sketches for Toxic Environment"><figcaption>sketches &amp; notes</figcaption></figure>
+            <figure class="shot">
+                <img class="auto"
+                  src="../assets/images/toxicenvironment/storyboard.png"
+                  alt="storyboard">
+                <figcaption> Storyboard</figcaption>
+            </figure>
           </div>
 
           <div class="step flip">
             <div class="step-text">
-              <p class="todo"> </p>
+              <div class="todo">
+                <p>
+                  As development progressed, we introduced marine animals that could be eliminated by releasing toxins.
+                  We also implemented a coin system and an upgrade shop, allowing players to exchange collected resources
+                  for improvements to their speed, health, and toxic abilities.
+                </p>
+                <p>
+                  I worked on the visual development of the game, marine animal behavior, the start and end screens,
+                  and the coin and shop systems. I also implemented the player's speed upgrade and helped organize the game's progression
+                  between scenes.
+                </p>
+              </div>
             </div>
-            <figure class="shot"><img src="../assets/images/toxicenvironment/toxic-environment/process-2.png" alt="Toxic Environment prototype"><figcaption>first prototype</figcaption></figure>
+            <figure class="shot">
+                <img class="auto"
+                  src="../assets/images/toxicenvironment/gdevelop-screen.png"
+                  alt="Gdevelop">
+                <figcaption> Gdevelop Behind the Scenes</figcaption>
+            </figure>
           </div>
 
           <div class="step">
             <div class="step-text">
-              <h3>3. Playtesting &amp; changes</h3>
-              <p class="todo"> </p>
+              <div class="todo">
+                <h3>2. Playtesting &amp; changes</h3>
+                <p>
+                  We conducted playtesting to understand how easily new players could understand the game's objective and mechanics.
+                  During the first playthrough, our tester was initially confused about the controls and the purpose of the
+                  surrounding marine animals. Based on this feedback, we introduced a starting screen explaining the objective and
+                  the R key toxin mechanic. We also worked on improving the game's progression, adding clearer instructions, and
+                  making the shop and upgrade systems more accessible.
+                </p>
+                <p>
+                  The playtest also revealed that some upgrades were more useful than others, particularly the speed upgrade.
+                  This showed us that we needed to make the different upgrades more meaningful and balanced so that players
+                  had more reasons to experiment with the shop..
+                </p>
+              </div>
             </div>
-            <figure class="shot"><img src="../assets/images/toxicenvironment/toxic-environment/process-3.png" alt="Toxic Environment playtesting"><figcaption>playtest changes</figcaption></figure>
+            <figure class="shot">
+                <img class="auto"
+                  src="../assets/images/toxicenvironment/shop-code.png"
+                  alt="shop code">
+                <figcaption> Shop Logic</figcaption>
+            </figure>
           </div>
-        </section>
 
         <!-- MY CONTRIBUTIONS -->
         <section class="block">
         <h2 class="title">what i did</h2>
             <div class="overview-box">
                 <ul class="contrib">
-                <li> </li>
-                <li> </li>
+                <li>Implemented interactions and behaviors for marine animals, including their movement and responses to toxin exposure.</li>
+                <li>Designed and implemented the starting screen and ending screen to communicate the game's objective and progression.</li>
+                <li>Implemented the resource collection system, allowing players to earn coins by eliminating marine animals.</li>
+                <li>Implemented the resource collection system, allowing players to earn coins by eliminating marine animals.</li>
+                <li>Developed the shop interface and purchasing logic, allowing players to spend collected coins on upgrades.</li>
+                <li>Tested gameplay systems, identified issues with interactions and progression, and adjusted the implementation to improve the player experience.</li>
                 </ul>
             </div>
         </section>
 
         <!-- WHAT I LEARNED -->
-        <section class="block">
+    <section class="block">
           <h2 class="title">what i learned</h2>
-          <p class="todo"> </p>
+          <div class="overview-box">
+            <p>
+              Developing Toxic Environment helped me gain a better understanding of game development, particularly how to use GDevelop's
+              event system to create interactive gameplay mechanics. I learned how to implement object interactions, movement behaviors,
+              collision detection, scene transitions, and variables that control different aspects of gameplay.
+            </p>
+              I also learned the importance of designing around the player's experience. Through playtesting,
+              I realized that even if the mechanics function correctly, players might not immediately understand
+              the objective or controls.
+            </p>
+              Overall, this project helped me develop my programming, visual design, problem-solving, and
+              playtesting skills. It also taught me how important it is to balance gameplay mechanics with
+              the message and experience I want players to take away from a game.
+            </p>
+        </div>
         </section>
-
-      </div>
-    </article>
 
     <!-- previous / next game -->
     <div class="pn">
